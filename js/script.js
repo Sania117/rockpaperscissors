@@ -24,7 +24,7 @@ $("#shoot").click(function() {
 
     console.log(computer_choice);
 
-    let computer_answers = [""];
+    let computer_answers = [];
 
     if (computer_choice < 0.35) {
 
