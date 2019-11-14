@@ -8,6 +8,8 @@ $("#shoot").click(function() {
 
     let input = $("#input").val();
 
+    let user_answers = input;
+
     let answers = ["rock", "paper", "scissors"];
 
     let isTrue = answers.includes(input);
@@ -44,6 +46,18 @@ $("#shoot").click(function() {
 
             $("#computerChoice").html(`<div> ${computer_answers} </div>`);
     }
+
+    if (user_answers == "rock" && computer_answers == "paper"){
+
+        $("#result").text("The computer wins!");
+
+    } else if (user_answers == "paper" && computer_answers == "rock"){
+
+        $("#result").text("You win!")
+
+    }
+
+    
     
 
 });
