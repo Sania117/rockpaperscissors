@@ -77,6 +77,8 @@ $("#shoot").click(function() {
 
     }
 
+    $("#input").val("");
+
     
     
 
