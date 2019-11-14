@@ -19,7 +19,7 @@ $("#shoot").click(function() {
         $("#userChoice").html(`<div> ${input} </div>`);
     } else {
         
-        $("#userChoice").html('No!');
+        alert('Not a valid answer!');
     }
 
     let computer_choice = Math.random();
@@ -51,9 +51,29 @@ $("#shoot").click(function() {
 
         $("#result").text("The computer wins!");
 
-    } else if (user_answers == "paper" && computer_answers == "rock"){
+    } else if (user_answers == "rock" && computer_answers == "scissors"){
 
         $("#result").text("You win!")
+
+    } else if (user_answers == "paper" && computer_answers == "scissors") {
+
+        $("#result").text("The computer wins!");
+
+    } else if (user_answers == "paper" && computer_answers == "rock") {
+
+        $("#result").text("You win!")
+
+    } else if (user_answers == "scissors" && computer_answers == "rock") {
+
+        $("#result").text("The computer wins!");
+
+    } else if (user_answers == "scissors" && computer_answers == "paper") {
+
+        $("#result").text("You win!");
+
+    }else if (user_answers == computer_answers) {
+
+        $("#result").text("It's a tie!");
 
     }
 
