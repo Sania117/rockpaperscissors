@@ -6,7 +6,9 @@
 /* global $ */
 $("#shoot").click(function() {
 
-    let input = $("#input").val();
+    let input = $("#input").val().tolowercase();
+
+    
 
     let user_answers = input;
 
